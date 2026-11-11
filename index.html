@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="app.css" rel="stylesheet">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#menuNavegacion" data-bs-smooth-scroll="true" tabindex="0">
+
+    <!-- ============================================================ -->
+    <!-- TODO 1: BARRA DE NAVEGACIÓN                                  -->
+    <!-- ============================================================ -->
+    <nav id="menuNavegacion" class="navbar navbar-expand-lg bg-dark sticky-top border-bottom ">
+        <div class="container">
+            <a class="text-neon navbar-brand fw-bold" href="#inicio">
+                <i class="bi text-neon text-primary me-1"></i>Santiago Rangel
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido"
+                aria-controls="navbarContenido" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarContenido">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link text-neon" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-neon" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link text-neon" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link text-neon" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link text-neon" href="#experiencia">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link text-neon" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- TODO 2: HERO / PORTADA (id="inicio")                         -->
+    <!-- ============================================================ -->
+    <section id="inicio" class="min-vh-100 d-flex align-items-center justify-content-center text-center bg-black px-3">
+        <div class="container py-5">
+            <span class="badge badge-neon text-white px-3 py-2 rounded-pill mb-3">Disponible para proyectos</span>
+            <h1 class="display-2 fw-bold text-white mb-3">Hola, soy <span class="text-neon">Santiago Rangel</span></h1>
+            <p class="lead text-secondary mx-auto mb-4" style="max-width: 650px;">
+                Especializado en interfaces interactivas, accesibles y aplicaciones web fluidas con tecnologías
+                modernas.
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+                <a href="#proyectos" class="btn btn-neon btn-lg px-4">Ver proyectos</a>
+                <a href="#contacto" class="btn btn-neon btn-lg px-4">Contáctame</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TODO 3: SOBRE MÍ (id="sobre-mi")                             -->
+    <!-- ============================================================ -->
+    <section id="sobre-mi" class="bg-dark py-5">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-md-5 text-center">
+                    <img src="IMG_0704.JPEG" alt="Foto de perfil"
+                        class="img-fluid rounded-circle shadow object-fit-cover" style="width: 280px; height: 280px;">
+                </div>
+                <div class="col-12 col-md-7">
+                    <h2 class="h1 text-white fw-bold mb-3">Sobre mí</h2>
+                    <p class="text-secondary fs-5">
+                        Me enfoco en transformar conceptos e ideas en soluciones web funcionales, cuidando la estructura
+                        semántica, la experiencia de usuario y el rendimiento.
+                    </p>
+                    <p class="text-secondary">
+                        Cuento con experiencia construyendo herramientas responsivas, componentes modulares e
+                        integración de APIs front-end.
+                    </p>
+                    <div class="pt-2">
+                        <a href="CV_EDGAR SANTIAGO.pdf" class="btn btn-neon">
+                            <i class="bi bi-download me-2"></i>Descargar CV
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TODO 4: HABILIDADES (id="habilidades")                       -->
+    <!-- ============================================================ -->
+    <section id="habilidades" class="py-5 bg-black">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-white">Habilidades Técnicas</h2>
+                <p class="text-secondary">Nivel de dominio y herramientas del flujo de trabajo</p>
+            </div>
+
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-secondary">HTML5 / Accesibilidad</span>
+                            <span class="text-secondary">95%</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="HTML5" aria-valuenow="95" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 10px;">
+                            <div class="progress-bar bg-primary" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-secondary">CSS3 & Layouts</span>
+                            <span class="text-secondary">90%</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="CSS3" aria-valuenow="90" aria-valuemin="0"
+                            aria-valuemax="100" style="height: 10px;">
+                            <div class="progress-bar bg-info" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-secondary">JavaScript (ES6+)</span>
+                            <span class="text-secondary">85%</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="JavaScript" aria-valuenow="85"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
+                            <div class="progress-bar bg-warning text-dark" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span class="text-secondary">Bootstrap 5</span>
+                            <span class="text-secondary">90%</span>
+                        </div>
+                        <div class="progress" role="progressbar" aria-label="Bootstrap 5" aria-valuenow="90"
+                            aria-valuemin="0" aria-valuemax="100" style="height: 10px;">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <h5 class="fw-semibold text-white mb-3">Herramientas & Entorno</h5>
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                    <span class="badge badge-neon text-bg-dark px-3 py-2">Adobe Illustrator</span>
+                    <span class="badge badge-neon text-bg-dark px-3 py-2">GitHub</span>
+                    <span class="badge badge-neon text-bg-dark px-3 py-2">VS Code</span>
+                    <span class="badge badge-neon text-bg-dark px-3 py-2">Figma</span>
+                    <span class="badge badge-neon text-bg-dark px-3 py-2">DaVinci</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TODO 5: PROYECTOS (id="proyectos")                           -->
+    <!-- ============================================================ -->
+    <section id="proyectos" class="bg-dark py-5">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-white">Proyectos Destacados</h2>
+                <p class="text-secondary">Selección de desarrollos recientes</p>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-black">
+                        <img src="neocul.jpg"
+                            class="card-img-top object-fit-cover" style="height: 200px;" alt="Proyecto Plataforma Web">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class=" texto card-title fw-bold">NEO GOT MY RATE</h5>
+                            <p class="card-text text-secondary">Pagina web con el proposito de publicar reseñas de
+                                canciones del grupo NCT.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-neon text-bg-secondary me-1">HTML5</span>
+                                <span class="badge badge-neon text-bg-secondary me-1">Bootstrap 5</span>
+                                <span class="badge badge-neon text-bg-secondary">JavaScript</span>
+                            </div>
+                            <div class="mt-auto">
+                                <button type="button" class="btn btn-neon w-100" data-bs-toggle="modal"
+                                    data-bs-target="#modalProyecto1">
+                                    Ver más detalles
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-black">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+                            class="card-img-top object-fit-cover" style="height: 200px;"
+                            alt="Proyecto Dashboard Analítico">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class=" texto card-title fw-bold">ISSTIDA</h5>
+                            <p class="card-text text-secondary">Proyecto multimedia sobre documental falso.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-neon text-bg-secondary me-1">DaVinci</span>
+                                <span class="badge badge-neon text-bg-secondary me-1">Produccion</span>
+                                <span class="badge badge-neon text-bg-secondary">Postproduccion</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-secondary w-100 disabled">Ver demo (pronto)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="col">
+                    <div class="card h-100 shadow-sm border-0 bg-black">
+                        <img src="LLEGA Presentación.png"
+                            class="card-img-top object-fit-cover" style="height: 200px;" alt="Proyecto App de Campus">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class=" texto card-title fw-bold">LLEGA</h5>
+                            <p class="card-text text-secondary">Diseño centrado en dispositivos móviles para catálogo de
+                                productos e intercambio entre estudiantes.</p>
+                            <div class="mb-3">
+                                <span class="badge badge-neon text-bg-secondary me-1">Mobile First</span>
+                                <span class="badge badge-neon text-bg-secondary me-1">Bootstrap</span>
+                                <span class="badge badge-neon text-bg-secondary">UI/UX</span>
+                            </div>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-outline-secondary w-100 disabled">Ver demo (pronto)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TODO 6: DETALLE DE PROYECTO (Modal)                          -->
+    <!-- ============================================================ -->
+    <div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered bg-black">
+            <div class="modal-content bg-black">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold texto" id="modalProyecto1Label">NEO GOT MY RATE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="neocul.jpg"
+                        class="img-fluid rounded mb-3" alt="Detalle del proyecto">
+                    <h6 class="fw-bold text-white">Acerca del proyecto</h6>
+                    <p class="text-secondary">
+                        Plataforma web inspirada en el modelo de Letterboxd diseñada para catalogar, calificar y reseñar
+                        la discografía del colectivo NCT y sus subunidades (NCT 127, DREAM, WayV, Wish y proyectos
+                        solistas). Implementa una arquitectura full stack con backend en Go y base de datos relacional
+                        SQLite para la gestión de usuarios, álbumes y reseñas, combinada con una interfaz web responsiva
+                        orientada al descubrimiento musical.
+                    </p>
+                    <h6 class="text-white">Puntos técnicos clave</h6>
+                    <ul class="text-secondary small">
+                        <li>Modelo relacional normalizado en SQLite para artistas, lanzamientos discográficos y reseñas de usuarios.</li>
+                        <li>Handlers de servidor en Go para el enrutamiento dinámico y persistencia de datos.</li>
+                        <li>Interfaz responsiva con componentes interactivos y navegación optimizada para catálogos musicales extensos.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="#" class="btn btn-neon">Ir al repositorio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- TODO 7: EXPERIENCIA / FORMACIÓN (id="experiencia")           -->
+    <!-- ============================================================ -->
+    <section id="experiencia" class="py-5 bg-black">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="h1 text-white fw-bold">Experiencia & Formación</h2>
+                <p class="text-secondary">Trayectoria académica y profesional</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="accordion shadow-sm" id="accordionExperiencia">
+                        <!-- Elemento 1 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-bold bg-dark text-neon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#expUno" aria-expanded="true"
+                                    aria-controls="expUno">
+                                    Licenciatura en Creatividad y Tecnologías Digitales (2024 - Presente)
+                                </button>
+                            </h2>
+                            <div id="expUno" class="accordion-collapse collapse show"
+                                data-bs-parent="#accordionExperiencia">
+                                <div class="accordion-body text-secondary">
+                                    Formación en diseño de software interactivo, desarrollo front-end, interfaces de
+                                    usuario (UI/UX) y gestión de proyectos digitales multiplataforma.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Elemento 2 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold bg-dark text-neon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#expDos" aria-expanded="false"
+                                    aria-controls="expDos">
+                                    Desarrollo Front-End & Proyectos Web (2025 - 2026)
+                                </button>
+                            </h2>
+                            <div id="expDos" class="accordion-collapse collapse" data-bs-parent="#accordionExperiencia">
+                                <div class="accordion-body text-secondary">
+                                    Creación de interfaces estáticas y dinámicas implementando frameworks CSS, buenas
+                                    prácticas de optimización de carga y control de versiones con Git.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Elemento 3 -->
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-bold bg-dark text-neon" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#expTres" aria-expanded="false"
+                                    aria-controls="expTres">
+                                    Certificación en Fundamentos Web y Accesibilidad
+                                </button>
+                            </h2>
+                            <div id="expTres" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionExperiencia">
+                                <div class="accordion-body text-secondary">
+                                    Cursos especializados en semántica HTML5, responsive web design con CSS Flexbox/Grid
+                                    y diseño accesible centrado en el usuario.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TODO 8: CONTACTO (id="contacto")                             -->
+    <!-- ============================================================ -->
+    <section id="contacto" class="py-5 bg-dark">
+        <div class="container py-4">
+            <div class="text-center mb-5">
+                <h2 class="h1 fw-bold text-white">Contacto</h2>
+                <p class="text-secondary">Escríbeme para colaborar o charlar sobre nuevos proyectos</p>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <form>
+                        <!-- Campo Nombre -->
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nombreContacto" placeholder="Tu nombre"
+                                required>
+                            <label for="nombreContacto">Nombre completo</label>
+                        </div>
+
+                        <!-- Campo Correo -->
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="correoContacto"
+                                placeholder="nombre@ejemplo.com" required>
+                            <label for="correoContacto">Correo electrónico</label>
+                        </div>
+
+                        <!-- Campo Asunto (Select) -->
+                        <div class="form-floating mb-3">
+                            <select class="form-select" id="asuntoContacto" aria-label="Selecciona el asunto">
+                                <option selected>Selecciona una opción</option>
+                                <option value="1">Propuesta de trabajo</option>
+                                <option value="2">Proyecto freelance</option>
+                                <option value="3">Consulta general</option>
+                            </select>
+                            <label for="asuntoContacto">Asunto</label>
+                        </div>
+
+                        <!-- Campo Mensaje -->
+                        <div class="form-floating mb-4">
+                            <textarea class="form-control" placeholder="Deja tu mensaje aquí" id="mensajeContacto"
+                                style="height: 140px;" required></textarea>
+                            <label for="mensajeContacto">Mensaje</label>
+                        </div>
+
+                        <!-- Botón Enviar -->
+                        <button type="submit" class="btn btn-neon w-100 py-3 fw-semibold">
+                            <i class="bi bi-send me-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================ -->
+    <!-- TODO 9: PIE DE PÁGINA                                        -->
+    <!-- ============================================================ -->
+    <footer class="bg-black text-white py-4 border-top border-secondary">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="GitHub">
+                    <i class="bi bi-github fs-5 lh-1"></i>
+                </a>
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light btn-sm rounded-circle p-2" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin fs-5 lh-1"></i>
+                </a>
+                <a href="mailto:contacto@ejemplo.com" class="btn btn-outline-light btn-sm rounded-circle p-2"
+                    aria-label="Correo">
+                    <i class="bi bi-envelope fs-5 lh-1"></i>
+                </a>
+            </div>
+            <p class="text-white-50 mb-0 small">&copy; 2026 Tu Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle con Popper incluido -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
